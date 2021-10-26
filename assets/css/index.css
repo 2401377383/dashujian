@@ -49,3 +49,7 @@ iframe {
     background: #009688;
     vertical-align: middle;
 }
+
+.layui-footer {
+    text-align: center;
+}
