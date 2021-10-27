@@ -18,4 +18,20 @@ $(function () {
             }
         }
     })
+
+    $('.layui-form').on('submit',function(e){
+        e.preventDefault()
+        $.ajax({
+            type:'patch',
+            url:'/my/userinfo',
+            data:$(this).serialize(),
+            success:function(res){
+                if(res.code != 0) {
+                    return layer.msg('修改密码失败！');
+                }
+                layer.msg('修改密码成功！');
+                $('#btnReset').click();
+            }
+        })
+    })
 })
