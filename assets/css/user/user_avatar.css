@@ -1,57 +1,44 @@
-body {
+body{
     padding: 15px;
 }
-
-.layui-form {
+.layui-card-body{
     width: 500px;
 }
-
-.layui-card-body {
-    width: 500px;
-}
-
-.row1 {
+.row1{
     display: flex;
     margin-bottom: 50px;
 }
-
-.cropper-box {
+.cropper-box{
     width: 350px;
     height: 350px;
     background: gray;
     overflow: hidden;
 }
-
-.w100 {
+.w100{
     width: 100px;
     height: 100px;
     background: gray;
     overflow: hidden;
 }
-
-.w50 {
+.w50{
     width: 50px;
     height: 50px;
     background: gray;
     overflow: hidden;
 }
-
-.size {
+.size{
     text-align: center;
     font-size: 14px;
 }
-
-.img-preview {
+.img-preview{
     border-radius: 50%;
 }
-
-.preview-box {
+.preview-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
 }
-
-#file {
+#file{
     display: none;
 }

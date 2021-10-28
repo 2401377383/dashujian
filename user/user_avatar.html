@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 导入 layui 的样式 -->
     <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+    <!-- 导入 cropper 的样式 -->
     <link rel="stylesheet" href="../assets/lib/cropper/cropper.css">
     <link rel="stylesheet" href="../assets/css/user/user_avatar.css">
 </head>
@@ -15,39 +17,48 @@
     <div class="layui-card">
         <div class="layui-card-header">更换头像</div>
         <div class="layui-card-body">
-            <!-- 第一行图片区 -->
+            <!-- 第一行图片区域 -->
             <div class="row1">
-                <!-- 图片裁剪区 -->
+                <!-- 图片裁剪区域 -->
                 <div class="cropper-box">
-                    <!-- 初始化裁剪区 -->
-                    <img src="../assets/images/sample.jpg" id="image">
+                    <!-- 这个是初始化裁剪区 -->
+                    <img src="" id="image">
                 </div>
-                <!-- 图片预览区 -->
+                <!-- 图片预览区域 -->
                 <div class="preview-box">
+                    <!-- 宽100*100预览区 -->
                     <div>
                         <div class="img-preview w100"></div>
                         <p class="size">100 x 100</p>
                     </div>
+                     <!-- 宽50*50预览区 -->
                     <div>
                         <div class="img-preview w50"></div>
                         <p class="size">50 x 50</p>
                     </div>
                 </div>
             </div>
-            <!-- 第二行按钮区 -->
+            <!-- 第一行按钮区域 -->
             <div class="row2">
-                <input type="file" name="" id="file" accept="image/png,image/jpg,image/jpeg/,image/pdf">
-                <button type="button" class="layui-btn" id="selectImg">选择图片</button>
-                <button type="button" id="btnUpload" class="layui-btn layui-btn-danger">上传头像</button>
+                <!-- 上传图片的标签 -->
+                <!-- accept 允许用户选择什么类型的文件 -->
+                <input type="file" id="file" accept="image/png,image/jpg,image/jpeg">
+                <button type="button" id="selectImg" class="layui-btn">选择图片</button>
+                <button id="btnUpload" type="button" class="layui-btn layui-btn-danger">上传头像</button>
             </div>
         </div>
     </div>
+    <!-- 导入支持 layui 的 js 文件  -->
     <script src="../assets/lib/layui/layui.all.js"></script>
+    <!-- 引入 jquery -->
     <script src="../assets/lib/jquery.js"></script>
     <script src="../assets/lib/cropper/Cropper.js"></script>
     <script src="../assets/lib/cropper/jquery-cropper.js"></script>
+
+    <!-- 引入 baseapi -->
     <script src="../assets/js/baseAPI.js"></script>
-    <script src="../assets/js/user/user.avatar.js"></script>
+    <!-- 引入 index.js -->
+    <script src="../assets/js/user/user_avatar.js"></script>
 </body>
 
 </html>
